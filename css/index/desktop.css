@@ -113,12 +113,12 @@ a {
     align-items: center;
 }
 
-.list-items > li {
+.list-items > a {
     margin-right: 2rem;
     color: var(--cWhite);
 }
 
-.list-items > li:hover {
+.list-items > a:hover {
     color: var(--cLightGray);
     cursor: pointer;
 }

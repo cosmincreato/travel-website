@@ -6,9 +6,9 @@
         <title>Visit Calinesti</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../css/index/desktop.css">
-        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="../css/index/tablet.css">
-        <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css/index/mobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../css/going/desktop.css">
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="../css/going/tablet.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css/going/mobile.css">
 
         <link rel="stylesheet" href="../css/poppins.css">
         <!--Fonts-->
@@ -53,24 +53,42 @@
                 <li class="flex btn">Sign Up</li>
             </ul>
         </div>
-        <!--Header-->
-        <header class="flex mid">
-            <div class="container title-card">
-                <h1 class="poppins-bold">
-                    <span>Bun venit în Călinești.</span>
-                    <span class="in">Aici merită să trăiești.</span>
-                </h1>
-                <p class="poppins-regular">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui nec lacus faucibus lobortis.
-                </p>
-                <div class="flex btn poppins-regular">
-                    <p>Află mai multe</p>
+        <!--Weather Card-->
+        <div class="container poppins-semibold">
+            <h1>Vremea în Nume</h1>
+        </div>
+        <div class="flex container weather">
+            <div class="flex today">
+                <div class="status">
+                    <h2 class="poppins-regular">Desc</h2>
+                    <p class="poppins-light">Mon</p>
+                </div>
+                <h2 class="poppins-semibold">0C</h2>
+            </div>
+            <div class="flex next-days poppins-light">
+                <div class="future-day">
+                    <p>Mie</p>
+                    <p>22C</p>
+                </div>
+                <div class="future-day">
+                    <p>Joi</p>
+                    <p>22C</p>
+                </div>
+                <div class="future-day">
+                    <p>Vin</p>
+                    <p>22C</p>
+                </div>
+                <div class="future-day">
+                    <p>Sam</p>
+                    <p>22C</p>
+                </div>
+                <div class="future-day">
+                    <p>Dum</p>
+                    <p>22C</p>
                 </div>
             </div>
-           <div class="container image-container">
-                 <img src="/images/lac.png">
-           </div>
-        </header>
+        </div>
         <script defer src="/js/navbar.js"></script>
+        <script defer src="/js/weather.js"></script>
     </body>
 </html>

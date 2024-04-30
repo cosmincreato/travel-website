@@ -13,6 +13,7 @@
 html {
     background-color: var(--cDarkGray);
     font-size: 16px;
+    color: var(--cWhite);
 }
 
 a {
@@ -23,7 +24,7 @@ a {
     display: flex;
 }
 
-.desktop {
+.mobile {
     display: none;
 }
 
@@ -35,8 +36,8 @@ a {
 }
 
 .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .image-container {
@@ -81,7 +82,6 @@ a {
 .title-card > h1 {
     color: var(--cWhite);
     font-size: 2.5rem;
-    margin-top: 0;
 }
 
 .title-card > p {
@@ -98,6 +98,7 @@ a {
 /* NAVBAR */
 .navbar {
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 #home {
@@ -109,35 +110,15 @@ a {
     color: var(--cLightRed);
 }
 
-.list-items > li:hover {
-    color: var(--cLightGray);
-    cursor: pointer;
-}
-
-.navbar-icon {
-    width: 20%;
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    color: var(--cWhite);
-}
-
-.fa-bars:hover {
-    cursor: pointer;
-    color: var(--cLightGray);
-}
-
 .list-items {
     list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .list-items > a {
+    margin-right: 2rem;
     color: var(--cWhite);
-    margin-bottom: .4rem;
-    width: 60%;
 }
 
 .list-items > a:hover {
@@ -145,8 +126,65 @@ a {
     cursor: pointer;
 }
 
-.toggle-nav {
+.navbar-1 {
+    width: 60%;
+    margin-right: 0;
+}
+
+.navbar-2 {
+    width: 35%;
+    margin-left: 0;
+}
+
+.navbar-icon {
     display: none;
-    background-color: red;
-    border-radius: 22px;
+}
+
+/* WEATHER */
+
+.weather {
+    background-color: var(--cBlack);
+    width: 45%;
+    color: var(--cWhite);
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.today {
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: flex-start;
+    padding-top: 1rem;
+    min-height: 120px;
+}
+
+.today > h2, .status > h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.status > p {
+    margin-top: .2rem;
+}
+
+.next-days {
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.future-day {
+    background-color: var(--cDarkGray);
+    border-radius: 15px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.future-day > p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
