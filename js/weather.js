@@ -1,10 +1,9 @@
-const KEY = "9eb0753c8f97decdf1d1427a12ef7cb9",
-LAT = "44.828250",
-LON = "25.021070";
+const LAT = "44.828250",
+      LON = "25.021070";
 
-const DAYS = ["Luni", "Marți", "Miercuri", "Joi", "Vineri", "Sâmbătă", "Duminică"]
-const DAY_ORDER = []
-const NOW = new Date();
+const DAYS = ["Luni", "Marți", "Miercuri", "Joi", "Vineri", "Sâmbătă", "Duminică"],
+      DAY_ORDER = [],
+      NOW = new Date();
 
 let today = NOW.getDay();
 let time = NOW.toString();
@@ -13,7 +12,8 @@ for (let i = 0; i <= 5; ++i) {
     DAY_ORDER[i] = DAYS[(today + i - 1) % 7];
 }
 
-fetch("https://api.openweathermap.org/data/2.5/forecast?lat="+LAT+"&lon="+LON+"&appid="+KEY)
+fetch("/config.json").then((response) => response.json()).then((API) => {
+    fetch("https://api.openweathermap.org/data/2.5/forecast?lat="+LAT+"&lon="+LON+"&appid="+API.key)
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
@@ -37,6 +37,8 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat="+LAT+"&lon="+LON+"&
             ps[1].innerHTML = toCelsius(data.list[8*dayIndex++ - 1].main.temp) + "°C";
         }
     });
+});
+
 
 function toCelsius(kelvin) {
     return Math.round(kelvin - 273.15);
