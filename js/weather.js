@@ -1,4 +1,4 @@
-const KEY = "01380c7358e3c410b0f7d526a05c1bf9",
+const KEY = "9eb0753c8f97decdf1d1427a12ef7cb9",
 LAT = "44.828250",
 LON = "25.021070";
 
