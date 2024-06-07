@@ -1,0 +1,152 @@
+:root {
+    --cBlack: #0b090a;
+    --cDarkGray: #161a1d;
+    --cGray: #b1a7a6;
+    --cLightGray: #d3d3d3;
+    --cWhite: #f5f3f4;
+    --cBurgundy: #660708;
+    --cDarkRed: #a4161a;
+    --cRed: #ba181b;
+    --cLightRed: #e5383b;
+}
+
+html {
+    background-color: var(--cDarkGray);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.desktop {
+    display: none;
+}
+
+.mid {
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title-card {
+    display: inline;
+    padding: 20px 20px 20px 0;
+    max-width: 650px;
+}
+
+.btn {
+    cursor: pointer;
+    max-width: 200px;
+    height: 40px;
+    min-height: 30px;
+    border-radius: 10px;
+    background-color: var(--cRed);
+    color: var(--cWhite);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: var(--cDarkRed);
+    color: var(--cLightGray);
+}
+
+.btn > p {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.title-card > h1 {
+    color: var(--cWhite);
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.title-card > p {
+    color: var(--cWhite);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.in {
+    display: block;
+    color: var(--cLightRed);
+}
+
+/* NAVBAR */
+.navbar {
+    justify-content: space-between;
+}
+
+#home {
+    color: var(--cWhite);
+    margin-right: 1rem;
+}
+
+#home > span {
+    color: var(--cLightRed);
+}
+
+.list-items > li:hover {
+    color: var(--cLightGray);
+    cursor: pointer;
+}
+
+.navbar-icon {
+    width: 20%;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--cWhite);
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+    color: var(--cLightGray);
+}
+
+.list-items {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.list-items > a {
+    color: var(--cWhite);
+    margin-bottom: .4rem;
+    width: 60%;
+}
+
+.list-items > a:hover {
+    color: var(--cLightGray);
+    cursor: pointer;
+}
+
+.toggle-nav {
+    display: none;
+    background-color: red;
+    border-radius: 22px;
+}

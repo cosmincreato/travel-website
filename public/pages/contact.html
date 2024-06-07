@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Visit Calinesti</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../css/contact/desktop.css">
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="../css/contact/tablet.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css/contact/mobile.css">
+
+        <link rel="stylesheet" href="../css/poppins.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/319bb7db17.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="flex navbar">
+            <div class="flex container navbar-1">
+                <a href="index.html">
+                    <h2 id="home" class="poppins-semibold">
+                        visit<span>calinesti.</span>
+                    </h2>
+                </a>
+                <ul class="desktop poppins-light flex list-items">
+                    <div id="dropdown" class="flex">
+                        <a href="trips.html"><li>Trips</li></a>
+                        <ul id="dropdown-menu" class="list-items">
+                            <a href="#"><li>Cârstieni</li></a>
+                            <a href="#"><li>Vrănești</li></a>
+                            <a href="#"><li>Râncăciov</li></a>
+                        </ul>
+                    </div>
+                    <a href="going.html"><li>Going Out</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+
+                </ul>
+            </div>
+            <div class="desktop container navbar-2">
+                <ul class="poppins-light flex list-items">
+                    <a href="#"><li>Log in</li></a>
+                    <li class="flex btn">Sign Up</li>
+                </ul>
+            </div>
+            <div class="mobile flex container navbar-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+        <!--Mobile toggle menu-->
+        <div class="mobile toggle-nav">
+            <ul class="poppins-light container list-items">
+                <a href="trips.html"><li>Trips</li></a>
+                <a href="going.html"><li>Going Out</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="#"><li>Log in</li></a>
+                <li class="flex btn">Sign Up</li>
+            </ul>
+        </div>
+        <!--Form-->
+        <div class="container poppins-semibold">
+            <h1>Contactează-ne</h1>
+        </div>
+        <!---->
+        <form  action="../show" method="GET" target="myIframe" class="container poppins-regular">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <span class="error" id="emailError"></span>
+            <br>
+            <label for="textarea">Recenzie:</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <p class="container poppins-regular">Aici se va incarca raspunsul de la server:</p>
+        <iframe class="container" name="myIframe" width="500" height="300"></iframe>
+        <!--Footer-->
+        <footer class="flex poppins-regular">
+            <div class="flex" style="align-items: center;">
+                <p>Creat de Mărășoiu Cosmin</p>
+            </div>
+            <div id="middle-footer" class="flex">
+                <a href="https://github.com/cosmincreato" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.instagram.com/marasoiu.cos/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/marasoiu.cos" target="_blank" class="fa fa-facebook"></a>
+            </div>
+            <div class="flex" style="align-items: center;">
+                <p>© 2024 VisitCalinesti, All rights reserved.</p>
+            </div>
+        </footer>
+    <script src="../js/contact.js"></script>
+    </body>
+</html>
