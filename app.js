@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
 const PORT = 3000;
 
@@ -21,6 +20,10 @@ app.get('/show', (req, res) => {
         `;
         res.send(htmlResponse);
     }
+});
+
+app.get('/login', (req, res) => {
+    res.send('Log in page');
 });
 
 app.get('/:page', (req, res) => {

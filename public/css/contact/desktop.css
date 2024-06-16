@@ -175,16 +175,28 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* FOOTER */
+
 footer {
     background-color: var(--cBlack);
     color: var(--cLightGray);
     justify-content: space-evenly;
     padding: 2rem 0;
+    margin-top: 1rem;
+    bottom: 0;
 }
 
 #middle-footer {
     align-items: center;
     font-size: 1.5rem;
+}
+
+.left-footer {
+    align-items: center;
+}
+
+.right-footer {
+    align-items: center;
 }
 
 #middle-footer > a {

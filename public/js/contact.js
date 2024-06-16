@@ -10,5 +10,3 @@ document.querySelector("form").addEventListener('submit', function(event) {
         document.getElementById('emailError').innerHTML = "Mail invalid";
     }
 });
-
-console.log(1);
